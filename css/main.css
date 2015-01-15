@@ -24,12 +24,14 @@
 
 
 .texty{
+
 	position: absolute;
 	z-index: 100;
 	margin-top: -10px;
-	margin-left: 35vw;
+	/*margin-left: -10px;*/
+	/*margin-left: 35vw;*/
 	/*border: 1px solid black;*/
-	
+	width: 100vw;
 	text-align: center;
 	
 	
