@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test1</title>
+	<style>
+		.hideme{
+			opacity: 0;
+
+		}
+		.visible{
+			opacity: 1;
+		}
+		img{
+			width: 600px;
+		}
+		#img2{
+			margin-left: -10px;
+			display: inline;
+			/*border: 1px solid black;*/
+		}
+		#img1{
+			display: inline;
+			/*border: 1px solid black;*/
+		}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#img1").hide(0);
+			$("#img2").hide(0);
+			$("#img1").animate({ width: 'show' }, 'slow', function(){$("#img2").animate({ width: 'show' },'slow');}); 
+			// $("#img2").delay(400).animate({ width: 'show' }, '400'); 
+		});		
+	</script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<div id="img1">
+	<img  src="images/line.jpg"/>
+	</div>
+	<div id="img2">
+	<img  src="images/line.jpg"/>
+	</div>
+</body>
+</html>

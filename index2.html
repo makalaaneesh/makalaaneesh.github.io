@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://malsup.github.io/jquery.cycle.all.js"></script>
+		<script type="text/javascript">
+			var showText = function (target, message, index, interval) {   
+				if (index < message.length) {
+					$(target).append(message[index++]);
+					setTimeout(function () { showText(target, message, index, interval); }, interval);
+					}
+				}
+
+			$(document).ready(function(){
+				$('.pics').cycle({ 
+				    fx:    'fade', 
+				    speed:  1500 
+				 });
+				$(".presenta").hover(function(){
+					$(this).css('background-color', '#4747DA');
+					$(this).css('color', 'white');
+			},
+			function () { //mouseout
+    			$(this).css('background-color', 'white');
+    			$(this).css('color', 'black');
+			});
+				
+			    $(".fade2").hide(0).delay(1500).fadeIn(1300);
+			    showText("#msg", "Art...a panacea!", 0, 100); 
+			    
+			   
+			
+			    
+			});
+			
+		</script>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body >	
+	<div class="picshead">
+		<div class="forwidth">
+		<div class="texty">
+	    	<div class="fade1"><h1 id="msg"></h1> </div> 
+  			<div class="fade2"><h1> -Umadevi</h1> </div> 
+  		</div>
+  		</div>
+		<div class="pics"> 
+		
+		    <img src="images/photo 4.JPG" width="100%" height="100%" /> 
+		    <img src="images/photo 2.JPG" width="100%" height="100%" /> 
+		    <img src="images/photo 3.JPG" width="100%" height="100%" /> 
+		</div> 
+	</div>
+	
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">Page 2</a></li>
+	        <li><a href="#">Page 2</a></li> 
+	        <li><a href="#">Page 2</a></li> 
+
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a id="left" class="fade1" href="about.html">Enter site</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	<!-- <br><br><br><br><br>
+	<div class="texty"><div >
+	    	<div class="fade1"><h1>Enter Website</h1> </div> 
+  		</div></div> -->
+	
+	
+	</body>
+
+</html>
