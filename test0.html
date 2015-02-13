@@ -10,8 +10,9 @@
           /*margin-bottom: auto;*/
           /*margin-top: auto;*/
           /*margin: 0vh auto 0 auto;*/
-          /*border: 1px solid red;*/
+          border: 1px solid red;
           top: 25%;
+
   /*transform: translateY(-50%);*/
       }
 #logo{
@@ -83,6 +84,7 @@ body{
           margin:0 auto;
           /*min-width: 320px;*/
           /*max-width: 480px;*/
+          /*border: 1px solid blue;*/
           
         }
         .ip-loader{
@@ -93,6 +95,7 @@ body{
           /*opacity: 0;*/
           /*cursor: default;*/
           /*pointer-events: none;*/
+          /*border: 1px solid red;*/
         }
         .ip-inner {
           display: block;
@@ -464,7 +467,10 @@ $( document ).ready(function() {
   </div>
   <!-- <img src=" main.svg"/> -->
 <div class="ip-loader">
-      <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+      <svg class="ip-inner" 
+      width="60px" height="60px"
+      preserveAspectRatio="xMidYMid meet"
+       viewBox="0 0 80 80">
         <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
         <path id="ip-loader-circle title" class="ip-loader-circle title" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
       </svg>
