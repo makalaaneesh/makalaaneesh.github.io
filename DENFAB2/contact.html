@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Denfab Engineers</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+     <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(28.568144, 77.198281),
+    zoom:17,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<!--END HEAD SECTION -->
+<body>
+    <!-- NAV SECTION -->
+   <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo-extended.png" class="logo img-responsive" id="testt" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="about.html" data-toggle="dropdown" class="dropdown-toggle">ABOUT US <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html#team11">Vision and Mission</a></li>
+                    <li class="divider"></li>
+                    <li><a href="about.html#team12">Denfab at a glance</a></li>
+                    <li class="divider"></li>
+                    <li><a href="about.html#team13">Leadership</a></li>
+                </ul>
+            </li>
+                    <li><a href="ourbusiness.html">OUR BUSINESS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="clients.html">CLIENTS</a></li>
+                    <li class="dropdown active">
+                <a href="about.html" data-toggle="dropdown" class="dropdown-toggle">CONTACT US<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="active"><a href="contact.html">Our Offices</a></li>
+                    <li class="divider"></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+    <!-- CONTACT SECTION -->
+    <div class="section">
+        <div class="container">
+
+
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <h1>Contact Details</h1>
+                    <h4>Please feel free to contact us regarding any matter and we'll get back to you at once!
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="row main-low-margin ">
+
+
+            <div class="col-md-7 col-sm-7">
+                <h3>FIND US HERE</h3>
+                <hr>
+               <div id="googleMap" style="width:700px;height:500px;"></div>
+            </div>
+            <div class="col-md-5 col-sm-5 text-center">
+                <h3 class="address-header">ADDRESS 1</h3>
+                <p>
+                    <p>
+                        A-2/28, Safdarjung Enclave,<br>
+                         New Delhi-110029, INDIA.<br>
+                        Call: 011-46120414/15/16, +919810645522<br>
+                        Email: info@denfabengineers.com<br>
+                    </p>
+
+                </p>
+                <h3 class="address-header">ADDRESS 2</h3>
+                <p>
+                    <p>
+					 B-9, Ansal Chamber-II<br>
+                     Bhikaji Cama Place<br>
+                     New Delhi-110029,INDIA<br>
+                      Call:  011-26163199, +919818733772<br>
+
+                    </p>
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="space-bottom"></div>
+    <!--END CONTACT SECTION -->
+    <!--FOOTER SECTION -->
+<div class="page-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<ul>
+								<h4>About us</h4>
+								<ul>
+									<li><a href='about.html#team11'>Vision and mission</a></li>
+									<li><a href='about.html#team12'>Denfab at a glance</a>
+									<li><a href='about.html#team13'>Leadership</a>
+								</ul>
+								<h4>Our Services</h4>
+								<ul>
+									<li><a href='ourbusiness.html'>Our Expertise</a>
+								</ul>
+									<h4>Our Clients</h4>
+									<ul>
+									<li><a href='clients.html'>Clients </a>
+									</ul>
+								</ul>
+						</div>
+						
+						<div class="col-md-3">
+							<ul>
+								<h4>Projects</h4>
+								<ul>
+									<li><a href='projects.html#project1'>Refinery/Petro-Chemicals</a></li>
+									<li><a href='projects.html#project2'>Oil Exploration</a>
+									<li><a href='projects.html#project3'>Chemical/Glass/Paper Plants/Gas Pipe Lines</a>
+									<li><a href='projects.html#project4'>Steel Plants</a></li>
+									<li><a href='projects.html#project5'>Power Plants</a></li>
+									<li><a href='projects.html#project6'>Alumina Refinery and Aluminium Smelter</a></li>
+									<li><a href='projects.html#project7'>DPR and Due Diligance</a></li>
+									
+								</ul>
+								
+						</div>
+						<div class="col-md-3">
+							<ul class="movelist">
+
+									<li><a href='/projects.html#project8'>Warehouses</a></li>
+									<li><a href='projects.html#project9'>Intake systems/ Water treatment plants/Sewage treatment plants</a></li>
+									<li><a href='projects.html#project10'>Metro stations/ Commonwealth Games/ Commercials</a></li>
+									<li><a href='projects.html#project11'>Steel fabrication of structures & Equipments</a></li>
+									<li><a href='projects.html#project12'>Abroad</a></li>
+									
+								</ul>
+								
+						</div>
+						
+						<div class="col-md-3 ">
+							<ul>
+								<h4>Contact Us</h4>
+								<ul>
+									<li><a href='contact.html'>Our Offices</a></li>
+									<li><a href='careers.html'>Careers</a>
+									
+								</ul>
+								
+						</div>
+						
+						
+					 </div>
+					 <hr>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-2">
+							<p> Copyright &copy; 2015 Denfab Engineers. All rights reserved.
+							<a href="about.html">About us</a> &nbsp;|&nbsp;
+							<a href="ourbusiness.html">Our Business</a> &nbsp;|&nbsp;
+							<a href="projects.html">Projects</a> &nbsp;|&nbsp;
+							<a href="clients.html">Clients</a> &nbsp;|&nbsp;
+							<a href="contact.html">Contact Us</a> &nbsp;|&nbsp;
+						</div>
+					</div>
+				</div>
+			</div>
+   
+
+    <!--END FOOTER SECTION -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
